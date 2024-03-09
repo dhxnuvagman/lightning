@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Aura</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+       <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+    body{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;}
+  nav{
+  border-radius: 0 0 22px 22px;
+}
+.hero1{
+  font-size: 62px;
+  font-weight:200;
+  color:rgba(7, 243, 208, 0.671);
+}
+    .head{
+        background-image: linear-gradient(to right, #2de2c1, #096e8a);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size:44px ;
+        font-weight: 600;
+    }
+    .underline-on-hover{
+        transition: border-bottom-color 0.2s ease;
+    }
+    .underline-on-hover:hover{
+      border-color:#2de2c1;
+    }
+    #header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  .comet {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(50%);
+      width: 5px;
+      height: 2px;
+      background-color: #2de2c1;
+      border-radius: 24px 24px 0 0;
+      box-shadow: 5px  0  6px rgb(247, 219, 3);
+      animation: cometMotion 2s linear infinite;
+  }
+
+  @keyframes cometMotion {
+      100% {
+          left: 00%;
+          bottom: 0%;
+      }
+      50%{
+
+      }
+      0% {
+          left: 99%;
+          bottom: 100%;
+      }
+  }
+  .comet:nth-child(2) {
+    animation-duration: 2s;
+}
+
+.comet:nth-child(3) {
+    animation-duration: 3s; 
+}
+.comet:nth-child(4) {
+    animation-duration: 1s;
+}
+.comet:nth-child(5) {
+    animation-duration: 2s;
+}
+.comet:nth-child(6) {
+    animation-duration: 6s;
+}
+.comet:nth-child(8) {
+    animation-duration: 4s;
+}
+.comet:nth-child(9) {
+    animation-duration: 1.5s;
+}
+  
+</style>
+
+<body>
+    <nav class="bg-gray-900 p-4 fixed top-0 w-full z-10">
+        <div class="flex items-center justify-between">
+            <div class=" p-1 head">Lightning Brains</div>
+    
+            
+            <div class="hidden md:flex space-x-4 text-white">
+                <a href="https://www.swizosoft.com" class="hover:text-gray-300 p-3 underline-on-hover border-b-2 border-transparent">Home</a>
+                <a href="#" class="hover:text-gray-300 p-3 underline-on-hover  border-b-2 border-transparent">About Us</a>
+                <a href="#" class="hover:text-gray-300 p-3 underline-on-hover  border-b-2 border-transparent ">Our Services</a>
+                <a href="#" class="hover:text-gray-300 p-3 underline-on-hover  border-b-2 border-transparent">Contact us</a>
+                <a href="#" class="hover:text-gray-300 p-3 underline-on-hover  border-b-2 border-transparent">More</a>
+            </div>
+    
+            
+            <div class="md:hidden">
+                <button id="mobile-menu-toggle" class="text-white">
+                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+       
+        <div id="mobile-menu" class="hidden md:hidden mt-4">
+            <a href="#" class="block text-white py-2 px-4">Home</a>
+            <a href="#" class="block text-white py-2 px-4">About Us</a>
+            <a href="#" class="block text-white py-2 px-4">Our Services</a>
+            <a href="#" class="block text-white py-2 px-4">Verify Your Certificate</a>
+            <a href="#" class="block text-white py-2 px-4">Results</a>
+        </div>
+    </nav>
+    <div class="pt-16">
+      <div class="bg-gray-800 py-20 text-center relative">
+          
+          <span class="comet"></span>
+          <span class="comet"></span>
+          <span class="comet"></span>
+          <span class="comet"></span>
+          <span class="comet"></span>
+          <span class="comet"></span>
+          <span class="comet"></span>
+          <span class="comet"></span>
+          <div class="hero-section pt-20">
+            <h1 class="hero1 py-20 mt-20 mb-8">From Projects to Portfolios,<br> We've Got You Covered!!</h1>
+            
+        </div>
+        </div>
+        <div class="heroic-section bg-gradient-to-r from-blue-500 to-purple-600 py-16 text-white text-center">
+          <div class="max-w-4xl mx-auto">
+              <h1 class="text-4xl font-bold mb-6">Welcome to Lightning Brains</h1>
+              <p class="text-lg mb-8">At Lightning Brains, we specialize in developing stunning websites for projects, portfolios, digital marriage invitations, and much more! Our team of experts is dedicated to bringing your ideas to life with creativity and precision.</p>
+              <a href="#" class="bg-white text-gray-800 font-bold py-3 px-8 rounded-full inline-block hover:bg-gray-300 transition duration-300">Get Started</a>
+          </div>
+      </div>
+           
+ 
+    
+    <script>
+        // Toggle Mobile Menu
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+    
+
+</body>
+</html>
