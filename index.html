@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-Aura</title>
+    <title>Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -40,7 +40,7 @@
   color:rgba(7, 243, 208, 0.671);
 }
     .head{
-        background-image: linear-gradient(to right, #2de2c1, #096e8a);
+        background-image: linear-gradient(to right, #2de2c1, #285d86);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -105,20 +105,24 @@
     animation-duration: 1.5s;
 }
   
+#about{
+    background:linear-gradient(to right,rgb(191, 215, 239),rgb(63, 134, 206));
+    color:rgb(9, 110, 173);
+}
 </style>
 
 <body>
     <nav class="bg-gray-900 p-4 fixed top-0 w-full z-10">
         <div class="flex items-center justify-between">
-            <div class=" p-1 head">Lightning Brains</div>
+            <div class=" p-1 head">InviteInfinity</div>
     
             
             <div class="hidden md:flex space-x-4 text-white">
-                <a href="https://www.swizosoft.com" class="hover:text-gray-300 p-3 underline-on-hover border-b-2 border-transparent">Home</a>
-                <a href="#" class="hover:text-gray-300 p-3 underline-on-hover  border-b-2 border-transparent">About Us</a>
-                <a href="#" class="hover:text-gray-300 p-3 underline-on-hover  border-b-2 border-transparent ">Our Services</a>
-                <a href="#" class="hover:text-gray-300 p-3 underline-on-hover  border-b-2 border-transparent">Contact us</a>
-                <a href="#" class="hover:text-gray-300 p-3 underline-on-hover  border-b-2 border-transparent">More</a>
+                <a href="#home" class="hover:text-gray-300 p-3 underline-on-hover border-b-2 border-transparent">Home</a>
+                <a href="#about" class="hover:text-gray-300 p-3 underline-on-hover  border-b-2 border-transparent">About Us</a>
+                <a href="/under.html" class="hover:text-gray-300 p-3 underline-on-hover  border-b-2 border-transparent ">Our Services</a>
+                <a href="/under.html" class="hover:text-gray-300 p-3 underline-on-hover  border-b-2 border-transparent">Contact us</a>
+                <a href="under.html" class="hover:text-gray-300 p-3 underline-on-hover  border-b-2 border-transparent">More</a>
             </div>
     
             
@@ -134,7 +138,7 @@
        
         <div id="mobile-menu" class="hidden md:hidden mt-4">
             <a href="#" class="block text-white py-2 px-4">Home</a>
-            <a href="#" class="block text-white py-2 px-4">About Us</a>
+            <a href="#" class="block text-white py-2 px-4">About us</a>
             <a href="#" class="block text-white py-2 px-4">Our Services</a>
             <a href="#" class="block text-white py-2 px-4">Verify Your Certificate</a>
             <a href="#" class="block text-white py-2 px-4">Results</a>
@@ -152,17 +156,38 @@
           <span class="comet"></span>
           <span class="comet"></span>
           <div class="hero-section pt-20">
-            <h1 class="hero1 py-20 mt-20 mb-8">From Projects to Portfolios,<br> We've Got You Covered!!</h1>
+            <h1 class="hero1 py-20 mt-20 mb-8">Capturing Life's,<br> Special Moments!!</h1>
             
         </div>
         </div>
-        <div class="heroic-section bg-gradient-to-r from-blue-500 to-purple-600 py-16 text-white text-center">
+        <div class="heroic-section bg-gradient-to-r from-blue-500 to-purple-600 py-16 text-white text-center" id="home">
           <div class="max-w-4xl mx-auto">
-              <h1 class="text-4xl font-bold mb-6">Welcome to Lightning Brains</h1>
-              <p class="text-lg mb-8">At Lightning Brains, we specialize in developing stunning websites for projects, portfolios, digital marriage invitations, and much more! Our team of experts is dedicated to bringing your ideas to life with creativity and precision.</p>
-              <a href="#" class="bg-white text-gray-800 font-bold py-3 px-8 rounded-full inline-block hover:bg-gray-300 transition duration-300">Get Started</a>
+              <h1 class="text-4xl font-bold mb-6">Welcome to InviteInfinity</h1>
+              <p class="text-lg mb-8">At InviteInfinity, we specialize in developing stunning websites for projects, portfolios, digital marriage invitations, and much more! Our team of experts is dedicated to bringing your ideas to life with creativity and precision.</p>
+              <a href="/under.html" class="bg-white text-gray-800 font-bold py-3 px-8 rounded-full inline-block hover:bg-gray-300 transition duration-300">Get Started</a>
           </div>
       </div>
+      <section id="about" class="py-16 ">
+        <div class="container mx-auto px-4 text-center ">
+            <h2 class="text-7xl font-bold mb-8">About Us</h2>
+            <div class="flex justify-center mb-8">
+                <!-- Image 1 -->
+                <img src="wedding.jpg" alt="Image 1" class="w-52 h-82 mr-4 rounded-full">
+                <!-- Image 2 -->
+                <img src="img2.jpg" alt="Image 2" class="w-32 h-32 ml-4 rounded-full">
+            </div>
+            <h3 class="text-3xl font-bold mb-8">Creativity and innovation define our team's approach to every project.</h3>
+            <p class="text-xl text-gray-900 leading-relaxed">
+                Welcome to InviteInfinity!
+    
+                We specialize in crafting digital experiences for weddings, birthdays, and more! From personalized invitations to heartfelt greetings, we're here to make your moments unforgettable.
+    
+                Thank you for choosing InviteInfinity for your special occasions!
+            </p>
+        </div>
+    </section>
+    
+      
            
  
     
@@ -173,6 +198,6 @@
         });
     </script>
     
-
+    
 </body>
 </html>
